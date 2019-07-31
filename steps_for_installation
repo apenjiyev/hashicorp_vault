@@ -1,0 +1,10 @@
+wget latestURLfromTheWebsite
+unzip theFileYouDownloaded -d .
+sudo cp vault /usr/bin/
+sudo mkdir /etc/vault
+sudo mkdir /opt/vault-data
+sudo mkdir -p /logs/vault/
+sudo vi /etc/vault/config.json
+sudo vi /etc/systemd/system/vault.service
+sudo systemctl start vault.service
+sudo systemctl status vault.service
